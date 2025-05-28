@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-fondo: #0a3d62;
+  --color-claro: #ecf0f1;
+  --color-acento: #3498db;
+  --color-acento-claro: #5dade2;
+  --color-texto: #2c3e50;
+  --radio: 12px;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url("img/4bd6df575436f5ab93f0aa97ffa0d4d6.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--color-claro);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--color-acento);
+  color: white;
+  transform: translateY(-2px);
+}
+
+a {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background-color: var(--color-acento);
+  padding: 8px 15px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: var(--color-acento-claro);
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: var(--radio);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: var(--sombra);
+  margin: 30px auto;
+  max-width: 90%;
+  backdrop-filter: blur(4px);
+}
+
+h2 {
+  font-size: 22px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-left: 6px solid var(--color-acento);
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radio);
+  padding: 12px 20px;
+  box-shadow: var(--sombra);
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
+  backdrop-filter: blur(4px);
+}
+
+h3 {
+  font-size: 20px;
+  color:black;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: var(--radio);
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-texto);
+  text-align: justify;
+  box-shadow: var(--sombra);
+}
+
+center img {
+  display: block;
+  margin: 20px auto;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  max-width: 100%;
+}
+
+.contenedor-cajas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+.caja {
+  background-color: rgba(255, 255, 255, 0.97);
+  width: 300px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.caja:hover {
+  transform: translateY(-5px);
+}
+
+.caja img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.caja h2 {
+  font-size: 20px;
+  color: var(--color-acento);
+  margin: 15px;
+  text-align: center;
+}
+
+.caja p {
+  font-size: 14px;
+  color: var(--color-texto);
+  padding: 0 15px 15px;
+  text-align: justify;
+}
+
+.integrantes {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.integrantes h3 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.lista-integrantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.nombre {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1b3b5f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.nombre:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
